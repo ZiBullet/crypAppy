@@ -20,6 +20,8 @@
 .header__nav-links-list {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -52,4 +54,14 @@
 .header__nav-links-btn:hover {
     background: #159BE8;
     border: 2px solid transparent;
+}
+@media screen and (max-width: 880px) {
+    .header__nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
