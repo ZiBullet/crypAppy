@@ -39,8 +39,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 110px;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 110px;
 }
 
 .main__new-app-heading-benefits-block_card {
@@ -183,6 +184,14 @@
     font-weight: 400;
     line-height: 24px;
 }
+.main__new-app-page-content-poster {
+    max-width: 345px;
+    width: 100%;
+}
+.main__new-app-page-bg {
+    max-width: 800px;
+    width: 100%;
+}
 @keyframes top-down {
     0% {
         top: -350px;
@@ -204,4 +213,23 @@
     100% {
         left: -100px;
     }
+}
+@media screen and (max-width: 1024px) {
+    .main__new-app-page-content {
+        flex-direction: column;
+    }
+    .main__new-app-page-content-features {
+        gap: 20px;
+    }
+    .main__new-app-page-content-features:first-child, .main__new-app-page-content-features {
+        text-align: center;
+    }
+    .main__new-app-page-content-features:first-child .main__new-app-page-content-features_feature, .main__new-app-page-content-features:last-child .main__new-app-page-content-features_feature {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 880px) {
+    .main__new-app-page-bg {
+        animation: none;
+    }   
 }
