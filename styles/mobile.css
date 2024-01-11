@@ -104,6 +104,8 @@
 }
 .main__mobile__phone {
     position: absolute;
+    max-width: 360px;
+    width: 100%;
 }
 .main__mobile__phone-one {
     top: 108px;
@@ -133,5 +135,34 @@
     }
     100% {
         right: -48px;
+    }
+}
+@media screen and (max-width: 1390px) {
+    .main__mobile__desc {
+        position: relative;
+        z-index: 10;
+    }
+    .main__mobile__phone {
+        animation: none;
+        opacity: 0.4;
+    }
+}
+@media screen and (max-width: 880px) {
+    .main__mobile__phone-one {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .main__mobile__desc {
+        text-align: center;
+        align-items: center;
+    }
+    .main__mobile__desc-benefits {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main__mobile__desc-benefits-card {
+        align-items: center;
     }
 }
