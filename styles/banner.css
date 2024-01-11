@@ -12,7 +12,7 @@
     max-width: 634px;
     width: 100%;
     color: #fff;
-    font-size: 64px;
+    font-size: clamp(1.5rem, 0.616rem + 4.418vw, 4.063rem);
     font-weight: 400;
     line-height: 76px;
     margin-bottom: 8px;
@@ -64,6 +64,10 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .main__banner__wrap {
+        text-align: center;
+        align-items: center;
+    }
     .main__banner__title {
         position: relative;
         z-index: 10;
@@ -81,11 +85,7 @@
     }
 }
 @media screen and (max-width: 520px) {
-    .main__banner__wrap {
-        text-align: center;
-    }
     .main__banner__title {
-        font-size: 45px;
-        line-height: 68px;
+        line-height: 48px;
     }
 }

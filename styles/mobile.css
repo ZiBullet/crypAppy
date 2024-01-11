@@ -23,7 +23,7 @@
     max-width: 456px;
     width: 100%;
     color: #fff;
-    font-size: 40px;
+    font-size: clamp(1rem, 0.483rem + 2.586vw, 2.5rem);
     font-weight: 400;
     line-height: 54px;
     margin-bottom: 8px;
