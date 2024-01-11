@@ -19,6 +19,8 @@
 }
 
 .main__banner__text {
+    position: relative;
+    z-index: 10;
     max-width: 634px;
     width: 100%;
     color: #fff;
@@ -59,5 +61,31 @@
         opacity: 0.4;
     } 100% {
         opacity: 1;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main__banner__title {
+        position: relative;
+        z-index: 10;
+    }
+    .main__banner__bg {
+        animation: none;
+        opacity: 0.4;
+    }
+    .main__banner__download-link {
+        position: relative;
+        z-index: 10;
+    }
+    .main__banner__download-link img {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 520px) {
+    .main__banner__wrap {
+        text-align: center;
+    }
+    .main__banner__title {
+        font-size: 45px;
+        line-height: 68px;
     }
 }
